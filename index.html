@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Demo - Superglobální pole</title>
+</head>
+<body>
+    <h1>Demonstrace PHP Superglobálních polí</h1>
+
+    <h2>1. $_GET - Odkaz s parametry</h2>
+    <p><a href="page.php?name=John&age=25">Klikněte zde pro zobrazení GET dat</a></p>
+
+    <h2>2. $_POST - Formulář pro odeslání dat metodou POST</h2>
+    <form action="submit.php" method="POST">
+        <label for="name">Jméno:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="age">Věk:</label>
+        <input type="text" id="age" name="age"><br><br>
+
+        <input type="submit" value="Odeslat">
+    </form>
+
+    <h2>3. $_SESSION - Uložení dat do relace</h2>
+    <form action="start_session.php" method="POST">
+        <label for="sessionName">Jméno pro relaci:</label>
+        <input type="text" id="sessionName" name="sessionName"><br><br>
+
+        <label for="sessionAge">Věk pro relaci:</label>
+        <input type="text" id="sessionAge" name="sessionAge"><br><br>
+
+        <input type="submit" value="Uložit do relace">
+    </form>
+
+    <h2>4. $_SERVER - Informace o serveru</h2>
+    <p><a href="server_info.php">Klikněte zde pro zobrazení informací o serveru</a></p>
+</body>
+</html>
